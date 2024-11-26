@@ -1,0 +1,222 @@
+body {
+    scroll-behavior: smooth;
+
+}
+
+#successtext {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 2s;
+}
+
+#nav {
+    z-index: 99;
+    background-color: rgb(49, 51, 59, 0.7);
+}
+
+.header_poster {
+    background-image: url('../imgs/poster-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.special_line {
+    width: 2px;
+    background-color: orange;
+    height: 20vh;
+    margin: auto;
+}
+
+.skill_card {
+    background-color: #3d3e42 !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.skill_card:hover {
+    background-color: orange !important;
+}
+
+.circle_star {
+    border-radius: 50%;
+    box-shadow: 0 0 35px 5px yellow, 0 0 25px 10px yellow inset;
+}
+
+.skill_card img {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+
+}
+
+.specail_background_color {
+    background-color: #31333b;
+    color: white;
+}
+
+.header_poster {
+    background-color: #181a23 !important;
+}
+
+.project_hover_class {
+    width: 33% !important;
+}
+
+.project_hover_class:hover .project_hover_content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project_hover_content {
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(42, 42, 42, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.project_hover_content h3 {
+    font-size: 2.5vw;
+}
+
+.project_hover_content p {
+    width: 50%;
+    font-size: 1.5vw;
+    width: fit-content;
+    word-wrap: normal;
+    text-align: center;
+}
+
+.project_hover_content a {
+    font-size: 2vw !important;
+}
+
+.scroll_button {
+    display: none;
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: orange;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+.contact-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    gap: 2%;
+}
+
+.contact-block svg {
+    width: 2vw !important;
+    height: 2vw !important;
+}
+
+.col-md-4 {
+    width: 25% !important;
+}
+
+.mailform {
+    width: 25% !important;
+}
+
+.mailform form {
+    width: 75% !important;
+}
+
+@media (max-width: 767px) {
+    .col-md-4 {
+        width: 50% !important;
+    }
+
+    .col-md-3 {
+        width: 100% !important;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    header h2 {
+        font-size: 5vw;
+    }
+
+    .contact-block {
+        width: 100% !important;
+    }
+
+    .contact-block span {
+        font-size: 4vw !important;
+    }
+
+    .contact-block svg {
+        width: 4vw !important;
+        height: 4vw !important;
+    }
+
+    .contact-links hr {
+        width: 30% !important;
+    }
+
+    nav {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .project_hover_content {
+        opacity: 1 !important;
+        visibility: visible !important;
+        width: auto;
+    }
+
+    .project_hover_content h3 {
+        font-size: 6vw;
+    }
+
+    .project_hover_content p {
+        font-size: 4vw;
+        width: 80%;
+    }
+
+    .mailform {
+        width: 75% !important;
+    }
+}
